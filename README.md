@@ -7,14 +7,14 @@ A basic email click tracker powered by [Keen.io](http://keen.io). Why? _Why not.
 
 Add your API keys, project ID, and target event collection to `main.js` and then launch `index.html`.
 
-**Creating a tracking link**
+**Create a tracked link**
 
 1. Define redirect URL (the link you want to track)
 2. Add optional secondary parameters (ip/geo-ip are automatically collected)
 3. Uncheck _TEST_ & click to 'Create tracking link'
 4. Copy and paste, _but don't click_, the link into your email.
 
-**View your report**
+**View activity report**
 
 Click 'Refresh' link or wait for 2 min auto-refresh. Every click (even your own) will be recorded along with date & time, ip, and the best guess for city/country.
 
