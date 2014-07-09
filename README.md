@@ -11,12 +11,12 @@ Add your API keys, project ID, and target event collection to `main.js` and then
 
 1. Define redirect URL (the link you want to track)
 2. Add optional secondary parameters (ip/geo-ip are automatically collected)
-3. Uncheck _TEST_ & click to 'Create tracking link'
-4. Copy and paste, _but don't click_, the link into your email.
+3. Uncheck _Test mode_ & click to _Create tracking link_
+4. Copy and paste, but don't click, the link into your email.
 
 **View activity report**
 
-Click 'Refresh' link or wait for 2 min auto-refresh. Every click (even your own) will be recorded along with date & time, ip, and the best guess for city/country.
+Click _Refresh_ link or wait for 2 min auto-refresh. Every click (even your own) will be recorded along with date & time, ip, and best guess for city/country.
 
 **Ideas for improvement**
 
