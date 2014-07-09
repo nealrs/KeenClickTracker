@@ -3,6 +3,8 @@ KeenClickTracker
 
 A basic email click tracker powered by [Keen.io](http://keen.io). Why? _Why not._
 
+![KeenClickTracker Screenshot](kct.png)
+
 **Setup**
 
 Add your API keys, project ID, and target event collection to `main.js` and then launch `index.html`.
