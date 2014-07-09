@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta name="robots" content="noindex">
+<title>Email Click Tracker</title>
+	<script type="text/javascript">!function(a,b){if(void 0===b[a]){b["_"+a]={},b[a]=function(c){b["_"+a].clients=b["_"+a].clients||{},b["_"+a].clients[c.projectId]=this,this._config=c},b[a].ready=function(c){b["_"+a].ready=b["_"+a].ready||[],b["_"+a].ready.push(c)};for(var c=["addEvent","setGlobalProperties","trackExternalLink","on"],d=0;d<c.length;d++){var e=c[d],f=function(a){return function(){return this["_"+a]=this["_"+a]||[],this["_"+a].push(arguments),this}};b[a].prototype[e]=f(e)}var g=document.createElement("script");g.type="text/javascript",g.async=!0,g.src="https://d26b395fwzu5fz.cloudfront.net/3.0.4/keen.min.js";var h=document.getElementsByTagName("script")[0];h.parentNode.insertBefore(g,h)}}("Keen",this);</script>
+
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<script src="main.js"></script>
+</head>
+<body>
+
+	<div id = "tracker" class = "container">
+		<div id="form">
+		<h2>Track links</h2>
+			<p>Your UTM tagged link: <input id = "r" type="url" name = "r" size="65"></p>
+			<p>Optional parameters (e.g. "key1" : "data1", "key2" : "data2"):<br>
+			<textarea id = "d" rows="4" cols="70" name = "d"></textarea></p>
+			<span class="warn">Test mode: <input id = "t" type="checkbox" name="t" checked> (uncheck this to track emails!)</span>
+			<br><br>
+			<span id = "run" class="button" onclick="process()" style="cursor:pointer;">Create tracking link</span>
+		</div>
+		<div id = "output"></div>
+	</div>
+
+	<div id = "report" class = "container">
+		<h2>Click Report<span onclick="showReport()" class = "report_head">&nbsp;&nbsp;&#8634;&nbsp;Refresh</span></h2>
+		<table cellpadding="5px">
+			<thead>
+				<tr class="table_head">
+					<th>date &amp; time</th>
+					<th>link</th>
+					<th>location</th>
+					<th>ip</th>
+				</tr>
+			</thead>
+			<tbody id = "tbody">
+			</tbody>
+		</table>
+	</div>
+
+	<script>
+		showReport();
+		window.setInterval(function(){
+			//console.log('refreshing report every 2 mins.');
+			showReport();
+		}, 120000);
+	</script>
+</body>
+</html>
